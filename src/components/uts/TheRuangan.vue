@@ -22,8 +22,6 @@
   export default {
     data() {
       return {
-        count: 0,
-        nilai: '',
         ruangan: new Ruangan('', '', 0),
   
         showNilai: false,
@@ -32,9 +30,6 @@
     },
   
     methods: {
-      increment() {
-        this.count++
-      },
       rubahNilai() {
         this.nilai = ''
         setTimeout(() => {

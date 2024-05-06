@@ -24,19 +24,13 @@
   export default {
     data() {
       return {
-        count: 0,
-        nilai: '',
         mhs: new Mahasiswa('', '', 0),
-  
         showNilai: false,
         mhs2: {}
       }
     },
   
     methods: {
-      increment() {
-        this.count++
-      },
       rubahNilai() {
         this.nilai = ''
         setTimeout(() => {
