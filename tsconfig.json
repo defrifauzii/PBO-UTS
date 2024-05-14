@@ -1,4 +1,9 @@
 {
+  "compilerOptions": {
+    "strict": true,
+    "allowImportingTsExtensions": true,
+
+  },
   "files": [],
   "references": [
     {

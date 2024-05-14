@@ -1,9 +1,16 @@
-<script setup lang="ts">
-import TheMahasiswa from '@/components/uts/TheMahasiswa.vue'
+
+<script lang="ts">
+import EntryMhs from '../components/Mahasiswa/EntryMhs.vue'
+
+export default{
+    components:{
+        EntryMhs
+    }
+}
 </script>
 
 <template>
-  <main>
-    <TheMahasiswa />
-  </main>
+<div>
+    <EntryMhs/>
+</div>
 </template>

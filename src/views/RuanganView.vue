@@ -1,9 +1,16 @@
-<script setup lang="ts">
-import TheRuangan from '@/components/uts/TheRuangan.vue'
+
+<script lang="ts">
+import EntryRuangan from '../components/Ruangan/EntryRuangan.vue'
+
+export default{
+    components:{
+        EntryRuangan
+    }
+}
 </script>
 
 <template>
-  <main>
-    <TheRuangan />
-  </main>
+<div>
+    <EntryRuangan/>
+</div>
 </template>

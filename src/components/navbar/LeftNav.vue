@@ -1,26 +1,41 @@
-<template>
-  <v-navigation-drawer color="dark" theme="dark" permanent expand-on-hover rail>
-    
-    <v-list density="compact"  nav>
-      <v-list-item prepend-icon="$vuetify" title="Home" :to="HomeView"></v-list-item>
-      <v-list-item prepend-icon="$vuetify" title="Dosen" :to="DosenView"></v-list-item>
-      <v-list-item prepend-icon="$vuetify" title="Mahasiswa" :to="MahasiswaView"></v-list-item>
-      <v-list-item prepend-icon="$vuetify" title="Ruangan" :to="RuanganView"></v-list-item>
-    </v-list>
-  </v-navigation-drawer>
+<style scoped>
+.navDraw {
+ background-image: url('../../assets/images/navbarImg.jpg');
+}
 
-  <v-main style="height: 450px"></v-main>
+</style>
+
+
+<template>
+  
+      <v-navigation-drawer
+        class="navDraw"
+        theme="dark"
+        permanent
+        expand-on-hover
+        rail
+      >
+
+        <v-list density="compact" nav>
+          <v-list-item prepend-icon="mdi-view-dashboard" title="Home" :to="homeView" ></v-list-item>
+          <v-list-item prepend-icon="mdi-account" title="Dosen" :to="dosenView" ></v-list-item>
+          <v-list-item prepend-icon="mdi-account" title="Mahasiswa" :to="mahasiswa" ></v-list-item>
+          <v-list-item prepend-icon="mdi-home-city" title="Ruangan" :to="ruanganView" ></v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+
+      <v-main style="height: 250px"></v-main>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      HomeView: "/",
-      RuanganView: "/ruangan",
-      MahasiswaView: "/mahasiswa",
-      DosenView: "/dosen",
-    };
-  },
-};
+  export default {
+    data () {
+      return {
+        homeView: '/',
+        ruanganView: '/ruangan',
+        mahasiswa: '/mahasiswa',
+        dosenView: '/dosen'
+      }
+    },
+  }
 </script>
